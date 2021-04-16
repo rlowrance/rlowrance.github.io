@@ -4,14 +4,14 @@ categories: person_productivity
 title: "How I Organize Files for a Project"
 ---
 
-I work on many project concurrently, each collecting files. My
-projects are of all kinds: some are developing business ideas, some
-are developing software, some are short-lived and some seem to go on
-and on. When I switch from one project to another, I need to quickly
-orient myself to the files in the project. To assist in doing that, I
-organize project-related folders in a uniform way. This organization
-structure has served for all kinds of projects. It is simply to setup
-and use. This note explains the structure.
+I work on many project concurrently, each collecting
+files. My projects are of all kinds: some are developing business
+ideas, some are developing software, some are short-lived and some
+seem to go on and on. When I switch from one project to another, I
+need to quickly orient myself to the files in the project. To assist
+in doing that, I organize project-related folders in a uniform
+way. This organization structure has served for all kinds of
+projects. It is simply to setup and use. This note explains the structure.
 
 A project is typically defined as a coherent set of tasks that has a
 beginning and ending date. Often, the project has deliverables and
@@ -25,7 +25,13 @@ called "Projects" that contains all of the project folders.
 
 Each project folder has within it at its top level three
 folders: one call "work", another called "output", and a third called
-"input." Typically there are no other top-level folders in a project folder.
+"input." Typically there are no other top-level folders in a project
+folder.
+
+In the remainder of this post, I'll describe those subfolders. A project
+folder might contains a few top-level files, and I'll describe those
+next. Then comes a summary of the structure of a project folder, some
+notes on how to use the project folders, and a discussion of prior work.
 
 # The work folder
 
@@ -48,19 +54,19 @@ application.
 I want to keep track of everything I've shown external parties so that
 I will know exactly what others have seen and when they saw it. That's
 the purpose of the "output" folder . It contains a set of folders
-named with the the date I transmitted material to someone else and the name
-of the party that received the material. For example, a folder named
-"output/2021-04-01 bob smith" contains documents I sent to Bob Smith
-on April 1, 2021. I write the date in ISO format so that the folders
-in "output" sort by date sent.
+named with the the date I transmitted material to someone else and the
+name of the party that received the material. For example, a folder
+named "output/2021-04-01 bob smith" contains documents I sent to Bob
+Smith on April 1, 2021. I write the date in YYYY-MM-DD format so that
+the folders in "output" sort by date sent.
 
 Each folder contains whatever was transmitted. When I'm being careful,
 the transmital document itself is in the folder. A typical transmital
 document is the email used send the document. If I send to someone
 more than once in a day, I append "a", "b", and so forth to the day
-number. The output folder typically gets built just as the project is
-starting, because it contains documents describing the project and
-those are most certainly sent to the client.
+number. The output folder typically gets built early in a project's
+life, because it contains documents describing the project and those
+are most certainly sent to the client.
 
 # The input folder
 
@@ -75,8 +81,9 @@ person or organization.
 Usually the document has the same name as the source used, so that I
 can find the document when the source describes it. Some
 documents--like webpages--don't have names. When that happens, I create
-a name, typically starting the name with the last name of the primary
-author a hyphen and the year the document was published. So the
+a name, typically starting with the last name of the primary
+author, then a hyphen, then the year the document was published, and
+finally either the author's title or an abbreviation of the title. So the
 contents of the webpage "My Great Insights" written by John Smith in
 2013, would be in the file "smith-2013 my great insights.txt".
 
@@ -84,11 +91,11 @@ contents of the webpage "My Great Insights" written by John Smith in
 
 Sometimes I have projects that are related to each other. For example,
 I create a project for each workshop and speech that I give. These
-projects are closedly related to each other. A workshop
+projects are closedly related to each other. For example, a workshop
 is typically similar to a previous workshop. To keep track of the
 related projects, at the top level in each project's folder, I place
-an alias file to each of the previous related projects. Sometimes I
-put alias to the new project in the prior projects.
+an alias file to each of the previous related projects. Sometimes, in
+the prior project's folders I put an alias to the new project.
 
 # Summary
 
@@ -113,8 +120,8 @@ the files my accounting system uses as well as various spreadsheets I
 use to keep track of things, and an output folder for material I've
 sent to others.
 
-Sometimes project folders contains subprojects. I put the project
-folders for subproject in the "work" folder.
+Sometimes a project contains subprojects. I put the project
+folders for subprojects in the "work" folder of the main project.
 
 The project folder can be shared when you are working with a
 team. Share this note with team members as an aid to getting everyone

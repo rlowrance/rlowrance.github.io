@@ -2,6 +2,7 @@
 layout: post
 categories: person_productivity
 title: "How I Organize Files for a Project"
+permalink: /202104170736
 ---
 
 I work on many project concurrently, each collecting
@@ -23,31 +24,34 @@ an appropriate name. Where the project folders go will be the subject
 of another post, but for now, you can assume that I have a folder
 called "Projects" that contains all of the project folders.
 
-Each project folder has within it at its top level three
-folders: one call "work", another called "output", and a third called
-"input." Typically there are no other top-level folders in a project
-folder.
+Each project folder has within it at its top level three subfolders:
+one called "work", another called "output," and a third called
+"input." I usually create these folders when I create then project folder.
+Typically there are no other top-level folders in a project
+folder. Sometimes there are a few files at the top level of the
+project folder.
 
-In the remainder of this post, I'll describe those subfolders. A project
-folder might contains a few top-level files, and I'll describe those
-next. Then comes a summary of the structure of a project folder, some
-notes on how to use the project folders, and a discussion of prior work.
+The remainder of this post is organized into sections. First I
+describe the three subfolders and then the optional top-level files. I
+summarize the structure of project folders and then discuss how to use
+them. Finally, I explain how my approach differs from the approaches
+often recommended by others.
 
 # The work folder
 
-The "work" folder contains everything that I created or co-created. If I'm
-working with a team, it contains everything the team created. If you
-are thinking of citing literature, I am the author or a co-author or
-team mate of the author of everything in the work folder. Examples of
-files would include drafts of documents, final versions of documents,
-spreadsheets that I'm working on or have finished, and other types of
-documents.
+The "work" folder contains everything that I created or co-created. If
+I'm working with a team, it contains everything the team created
+during the project. If you are thinking of citing literature, I am the
+author or a co-author or team mate of the author of everything in the
+work folder. Examples of files would include drafts of documents,
+final versions of documents, spreadsheets that I'm working on or have
+finished, and other types of documents.
 
 Sometimes the work folder contains other folders. These folders might
-be around the phases of a project or some other logical structure. If
-I'm writing code, there is usually a "src" folder containing the
-source code. The src folder is usually managed by a version control
-application.
+be around the phases of a project or some other logical structure such
+as a deliverable. If I'm writing code, there is usually a "src" folder
+containing the source code. The src folder content is usually managed by a
+version control application.
 
 # The output folder
 
@@ -64,35 +68,73 @@ Each folder contains whatever was transmitted. When I'm being careful,
 the transmital document itself is in the folder. A typical transmital
 document is the email used send the document. If I send to someone
 more than once in a day, I append "a", "b", and so forth to the day
-number. The output folder typically gets built early in a project's
-life, because it contains documents describing the project and those
-are most certainly sent to the client.
+number, when I need to distinguish the transmitals. The output folder
+typically gets its first content early in a project's life, because it
+contains documents describing the project and those are most certainly
+sent to the client.
 
 # The input folder
 
 Usually there is an "input" folder as well. It contains material for
-which neither I nor my team mates are the authors. Examples would be
-analysis from other parties and data sets from others. My practice is to lock
-the files in this folder so that I know that I did not modify
-them. There is a folder for each source, which is often a person, but
-sometimes an organization. The name of the folder is the name of the
-person or organization.
+which neither I nor my teammates are the authors. Examples would be
+analysis from other parties and data sets from others. 
 
-Usually the document has the same name as the source used, so that I
-can find the document when the source describes it. Some
-documents--like webpages--don't have names. When that happens, I create
-a name, typically starting with the last name of the primary
-author, then a hyphen, then the year the document was published, and
-finally either the author's title or an abbreviation of the title. So the
-contents of the webpage "My Great Insights" written by John Smith in
-2013, would be in the file "smith-2013 my great insights.txt".
+The structure of this folder reflects the two main sources of input
+documents: someone sends me something and I find something on your
+own.
+
+When someone sends me something, I put the files they sent into a
+folder named "input/LASTNAME, FIRSTNAME/YYYY-MM-DD". The date
+is usually the date the documents were sent. Usually I use whatever
+file names the sender used, as these tend to be unique within a
+transmital and useful to know when trying to find a document: "Do you
+have the XYZ document I sent you last week?"
+
+I use the same structure for data sets I download from other
+sources. The folder name is "input/SOURCE/YYYY-MM-DD/" and the file
+names are whatever was used by the source.
+
+When I find a document myself, perhaps from a literature search, I
+download the document and move it to the input folder. If the document
+has a descriptive name, I preceed that name with the last name of the
+primary author and year of publication. For example, the file name
+might be "chang-2021 how many tyrannosourus rexes ever lived on
+earth.pdf" (which is an article authored by Kenneth Change and
+published in the New York Times sometimes in 2021). (A variant is to
+include the full date when that's available, so the file name might
+start with "chang-2021-05-15." Sometimes the downloaded document
+doesn't have a descriptive name. I then find a few keywords to
+describe it and put those in the file name. For example, the file
+containing the paper by Noble (2009) might have the name "noble-2009
+organizing projects". I select the keywords hoping that they help me
+find the document.
+
+Many times the literature I consult is online. It might change at any
+time, so I keep track of both the date the document was published and
+the date I accessed the document. The date is was published is in the
+file name or folder name. The date I access it is in the notes I take
+and those notes are in the work folder.
+
+When I'm working on a team, often team mates will send documents that
+they have written. If these provide background information for the
+project, they go into the input folder. If they are drafts of
+deliverables we are working on, they go into an appropropriate subfolder
+in the work folder.
+
+A good practice is to never edit or otherwise change the documents in
+the input folder. Doing so would make your process hard to
+replicate. Instead, write a program that makes the changes for
+you. That program would read from the project's input folder and write
+to its work folder. To avoid the temptation to edit input files, you
+can lock your input folder or individual files in it. How to lock
+files and folders depends on your operating system. A search will tell
+you how to do that.
 
 # Other objects at the top level in a project folder
 
-Sometimes I have projects that are related to each other. For example,
+I have projects that are related to each other. For example,
 I create a project for each workshop and speech that I give. These
-projects are closedly related to each other. For example, a workshop
-is typically similar to a previous workshop. To keep track of the
+projects are closedly related to each other. To keep track of the
 related projects, at the top level in each project's folder, I place
 an alias file to each of the previous related projects. Sometimes, in
 the prior project's folders I put an alias to the new project.
@@ -104,10 +146,34 @@ will be a folder for it. Inside that folder will be a work folder,
 containing documents that I or my team have authored, an output folder
 with a copy of whatever was sent to people outside the team, and an
 input folder containing documents and data sets authored by others. No
-other folders are at the top level in the project folder.
+other folders are at the top level in the project folders.
 
 In addition to the subfolders, at the top level of the project folder
-I place alias files for related projects. 
+I place alias files for related projects.
+
+The structure of a project folder looks like this:
+
+    # alias for related projects
+    project name/alias of folder for related project 1
+    project name/alias of folder for related project 2
+    ...
+	# input documents organized into sources or names of authors
+    project name/input/source 1/YYYY-MM-DD/document 1
+    project name/input/source 1/YYYY-MM-DD/document 2
+    ...
+    project name/input/LASTNAME-YEAR document-name-from-source
+    project name/input/LASTNAME-YEAR my keywords
+    ...
+	# output document organized by date-party sent to
+    project name/output/YYYY-MM-DD NAME1/document 1
+	project name/output/YYYY-MM-DD NAME1/document 2
+	...
+	# work documents organized by deliverable (and some deliverable within phase)
+    project name/work/deliverable 1/document 1
+    project name/work/deliverable 1/document 2
+    ...
+
+
 
 # Using the project folders
 
@@ -120,14 +186,19 @@ the files my accounting system uses as well as various spreadsheets I
 use to keep track of things, and an output folder for material I've
 sent to others.
 
-Sometimes a project contains subprojects. I put the project
-folders for subprojects in the "work" folder of the main project.
-
 The project folder can be shared when you are working with a
 team. Share this note with team members as an aid to getting everyone
 to organize that shared folder consistently. If you are following my
-practice, create an input folder with the name "lowrance" and within
-in, a webloc file named, perhaps, "lowrance-2021 folder organization.webloc".
+practices, download a link to this document, name it perhaps,
+"lowrance-2021 folder organization.webloc", and put it into your
+project's input folder.
+
+I've written this note up as if all my project files are organized as
+I described. But that's not true, as I have many years of project
+files and this organization occured to me only a few years ago. So
+there a lot of project folders for completed projects that are not
+organized this way. Sometimes I restructure them when I have to refer to
+material in those folders.
 
 # Prior work
 
@@ -144,13 +215,13 @@ A notable example of organizing for reproducability is from Noble
 (2009). He suggests these folders that would be in our work folder:
 doc (containing documents, including papers), data (he segregates the
 raw data from data the project generated), src (the source code), bin
-(when working with some programming languages, a compiled version of
-the source code is needed and those compiled versions go into bin),
-and results (the results of running the programs). Noble's system is
-compatible with our suggestions, with the exception that our approach
-considers who provided the raw data. If it came from outside the
-project, its in our "input" folder in a subfolder that identifies the
-source of the data, not in our "work/data" folder.
+(executable files go here, including scripts), and results (the
+results of running the programs and a digital project
+notebook). Noble's system is compatible with our suggestions, with the
+exception that our approach considers who provided the raw data. If it
+came from outside the project, its in our "input" folder in a
+subfolder that identifies the source of the data, not in our
+"work/data" folder.
 
 In another post, I'll explain how I organize all the folders on my systems.
 

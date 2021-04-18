@@ -1,93 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-18T16:16:47-04:00</updated><id>/feed.xml</id><title type="html">Mostly Applied Data Science</title><subtitle>I work at the intersection of business strategy and information technology.</subtitle><entry><title type="html">How I Organize Files for a Project</title><link href="/202104170736" rel="alternate" type="text/html" title="How I Organize Files for a Project" /><published>2021-04-16T00:00:00-04:00</published><updated>2021-04-16T00:00:00-04:00</updated><id>/organizing-files-for-a-project</id><content type="html" xml:base="/202104170736">&lt;p&gt;I work on many project concurrently, each collecting
+I".<p>I work on many project concurrently, each collecting
 files. My projects are of all kinds: some are developing business
 ideas, some are developing software, some are short-lived and some
 seem to go on and on. When I switch from one project to another, I
 need to quickly orient myself to the files in the project. To assist
 in doing that, I organize project-related folders in a uniform
 way. This organization structure has served for all kinds of
-projects. It is simply to setup and use. This note explains the structure.&lt;/p&gt;
+projects. It is simply to setup and use. This note explains the structure.</p>
 
-&lt;p&gt;A project is typically defined as a coherent set of tasks that has a
+<p>A project is typically defined as a coherent set of tasks that has a
 beginning and ending date. Often, the project has deliverables and
 when they are delivered, the project ends. Let’s use that definition
-for a while.&lt;/p&gt;
+for a while.</p>
 
-&lt;p&gt;When I start a project, I create a folder for that project. I give it
+<p>When I start a project, I create a folder for that project. I give it
 an appropriate name. Where the project folders go will be the subject
 of another post, but for now, you can assume that I have a folder
-called “Projects” that contains all of the project folders.&lt;/p&gt;
+called “Projects” that contains all of the project folders.</p>
 
-&lt;p&gt;Each project folder has within it at its top level three subfolders:
+<p>Each project folder has within it at its top level three subfolders:
 one called “work”, another called “output,” and a third called
 “input.” I usually create these folders when I create then project folder.
 Typically there are no other top-level folders in a project
 folder. Sometimes there are a few files at the top level of the
-project folder.&lt;/p&gt;
+project folder.</p>
 
-&lt;p&gt;The remainder of this post is organized into sections. First I
+<p>The remainder of this post is organized into sections. First I
 describe the three subfolders and then the optional top-level files. I
 summarize the structure of project folders and then discuss how to use
 them. Finally, I explain how my approach differs from the approaches
-often recommended by others.&lt;/p&gt;
+often recommended by others.</p>
 
-&lt;h1 id=&quot;the-work-folder&quot;&gt;The work folder&lt;/h1&gt;
+<h1 id="the-work-folder">The work folder</h1>
 
-&lt;p&gt;The “work” folder contains everything that I created or co-created. If
+<p>The “work” folder contains everything that I created or co-created. If
 I’m working with a team, it contains everything the team created
 during the project. If you are thinking of citing literature, I am the
 author or a co-author or team mate of the author of everything in the
 work folder. Examples of files would include drafts of documents,
 final versions of documents, spreadsheets that I’m working on or have
-finished, and other types of documents.&lt;/p&gt;
+finished, and other types of documents.</p>
 
-&lt;p&gt;Sometimes the work folder contains other folders. These folders might
+<p>Sometimes the work folder contains other folders. These folders might
 be around the phases of a project or some other logical structure such
 as a deliverable. If I’m writing code, there is usually a “src” folder
 containing the source code. The src folder content is usually managed by a
-version control application.&lt;/p&gt;
+version control application.</p>
 
-&lt;h1 id=&quot;the-output-folder&quot;&gt;The output folder&lt;/h1&gt;
+<h1 id="the-output-folder">The output folder</h1>
 
-&lt;p&gt;I want to keep track of everything I’ve shown external parties so that
+<p>I want to keep track of everything I’ve shown external parties so that
 I will know exactly what others have seen and when they saw it. That’s
 the purpose of the “output” folder . It contains a set of folders
 named with the the date I transmitted material to someone else and the
 name of the party that received the material. For example, a folder
 named “output/2021-04-01 bob smith” contains documents I sent to Bob
 Smith on April 1, 2021. I write the date in YYYY-MM-DD format so that
-the folders in “output” sort by date sent.&lt;/p&gt;
+the folders in “output” sort by date sent.</p>
 
-&lt;p&gt;Each folder contains whatever was transmitted. When I’m being careful,
+<p>Each folder contains whatever was transmitted. When I’m being careful,
 the transmital document itself is in the folder. A typical transmital
 document is the email used send the document. If I send to someone
 more than once in a day, I append “a”, “b”, and so forth to the day
 number, when I need to distinguish the transmitals. The output folder
 typically gets its first content early in a project’s life, because it
 contains documents describing the project and those are most certainly
-sent to the client.&lt;/p&gt;
+sent to the client.</p>
 
-&lt;h1 id=&quot;the-input-folder&quot;&gt;The input folder&lt;/h1&gt;
+<h1 id="the-input-folder">The input folder</h1>
 
-&lt;p&gt;Usually there is an “input” folder as well. It contains material for
+<p>Usually there is an “input” folder as well. It contains material for
 which neither I nor my teammates are the authors. Examples would be
-analysis from other parties and data sets from others.&lt;/p&gt;
+analysis from other parties and data sets from others.</p>
 
-&lt;p&gt;The structure of this folder reflects the two main sources of input
+<p>The structure of this folder reflects the two main sources of input
 documents: someone sends me something and I find something on your
-own.&lt;/p&gt;
+own.</p>
 
-&lt;p&gt;When someone sends me something, I put the files they sent into a
+<p>When someone sends me something, I put the files they sent into a
 folder named “input/LASTNAME, FIRSTNAME/YYYY-MM-DD”. The date
 is usually the date the documents were sent. Usually I use whatever
 file names the sender used, as these tend to be unique within a
 transmital and useful to know when trying to find a document: “Do you
-have the XYZ document I sent you last week?”&lt;/p&gt;
+have the XYZ document I sent you last week?”</p>
 
-&lt;p&gt;I use the same structure for data sets I download from other
+<p>I use the same structure for data sets I download from other
 sources. The folder name is “input/SOURCE/YYYY-MM-DD/” and the file
-names are whatever was used by the source.&lt;/p&gt;
+names are whatever was used by the source.</p>
 
-&lt;p&gt;When I find a document myself, perhaps from a literature search, I
+<p>When I find a document myself, perhaps from a literature search, I
 download the document and move it to the input folder. If the document
 has a descriptive name, I preceed that name with the last name of the
 primary author and year of publication. For example, the file name
@@ -100,125 +100,139 @@ doesn’t have a descriptive name. I then find a few keywords to
 describe it and put those in the file name. For example, the file
 containing the paper by Noble (2009) might have the name “noble-2009
 organizing projects”. I select the keywords hoping that they help me
-find the document.&lt;/p&gt;
+find the document.</p>
 
-&lt;p&gt;Many times the literature I consult is online. It might change at any
+<p>Many times the literature I consult is online. It might change at any
 time, so I keep track of both the date the document was published and
 the date I accessed the document. The date is was published is in the
 file name or folder name. The date I access it is in the notes I take
-and those notes are in the work folder.&lt;/p&gt;
+and those notes are in the work folder.</p>
 
-&lt;p&gt;When I’m working on a team, often team mates will send documents that
+<p>When I’m working on a team, often team mates will send documents that
 they have written. If these provide background information for the
 project, they go into the input folder. If they are drafts of
 deliverables we are working on, they go into an appropropriate subfolder
-in the work folder.&lt;/p&gt;
+in the work folder.</p>
 
-&lt;p&gt;A good practice is to never edit or otherwise change the documents in
+<p>A good practice is to never edit or otherwise change the documents in
 the input folder. Doing so would make your process hard to
 replicate. Instead, write a program that makes the changes for
 you. That program would read from the project’s input folder and write
 to its work folder. To avoid the temptation to edit input files, you
 can lock your input folder or individual files in it. How to lock
 files and folders depends on your operating system. A search will tell
-you how to do that.&lt;/p&gt;
+you how to do that.</p>
 
-&lt;h1 id=&quot;other-objects-at-the-top-level-in-a-project-folder&quot;&gt;Other objects at the top level in a project folder&lt;/h1&gt;
+<h1 id="other-objects-at-the-top-level-in-a-project-folder">Other objects at the top level in a project folder</h1>
 
-&lt;p&gt;I have projects that are related to each other. For example,
+<p>I have projects that are related to each other. For example,
 I create a project for each workshop and speech that I give. These
 projects are closedly related to each other. To keep track of the
 related projects, at the top level in each project’s folder, I place
 an alias file to each of the previous related projects. Sometimes, in
-the prior project’s folders I put an alias to the new project.&lt;/p&gt;
+the prior project’s folders I put an alias to the new project.</p>
 
-&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+<h1 id="summary">Summary</h1>
 
-&lt;p&gt;Let’s summarize. If I have a project called say “marketing-plan” there
+<p>Let’s summarize. If I have a project called say “marketing-plan” there
 will be a folder for it. Inside that folder will be a work folder,
 containing documents that I or my team have authored, an output folder
 with a copy of whatever was sent to people outside the team, and an
 input folder containing documents and data sets authored by others. No
-other folders are at the top level in the project folders.&lt;/p&gt;
+other folders are at the top level in the project folders.</p>
 
-&lt;p&gt;In addition to the subfolders, at the top level of the project folder
-I place alias files for related projects.&lt;/p&gt;
+<p>In addition to the subfolders, at the top level of the project folder
+I place alias files for related projects.</p>
 
-&lt;p&gt;The structure of a project folder looks like this:&lt;/p&gt;
+<p>The structure of a project folder looks like this:</p>
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# alias for related projects
-project name/alias of folder for related project 1
-project name/alias of folder for related project 2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project name
+project name/alias of related project 1
+project name/alias of related project 2
 ...
-# input documents organized into sources or names of authors
+project name/input
 project name/input/source 1/YYYY-MM-DD/document 1
 project name/input/source 1/YYYY-MM-DD/document 2
 ...
-project name/input/LASTNAME-YEAR document-name-from-source
-project name/input/LASTNAME-YEAR my keywords
+project name/input/AUTHOR-YEAR/document-name-from-source
 ...
-# output document organized by date-party sent to
-project name/output/YYYY-MM-DD NAME1/document 1
-project name/output/YYYY-MM-DD NAME1/document 2
+project name/input/AUTHOR-YEAR my keywords
 ...
-# work documents organized by deliverable (and some deliverable within phase)
-project name/work/deliverable 1/document 1
-project name/work/deliverable 1/document 2
+project name/output
+project name/output/YYYY-MM-DD name sent to 1
+project name/output/YYYY-MM-DD name sent to 2
 ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+project name/work
+project name/work/deliverable 1
+project name/work/deliverable 2
+...
+project name/input
+project name/input/source1/document1
+project name/input/source1/document2
+...
+project name/input/AUTHOR-YEAR sender's name
+project name/input/AUTHOR-YEAR my keywords
+</code></pre></div></div>
 
-&lt;h1 id=&quot;using-the-project-folders&quot;&gt;Using the project folders&lt;/h1&gt;
+<h1 id="using-the-project-folders">Using the project folders</h1>
 
-&lt;p&gt;I use a loose definition of a project: some of my projects will run
+<p>I use a loose definition of a project: some of my projects will run
 for years and for some, I am among the clients. For example, I have a
 home financial management project that will not end for a long time–
 at least that’s my plan. It contains an input folder containing
 financial statements and bills and so forth, a work folder containing
 the files my accounting system uses as well as various spreadsheets I
 use to keep track of things, and an output folder for material I’ve
-sent to others.&lt;/p&gt;
+sent to others.</p>
 
-&lt;p&gt;The project folder can be shared when you are working with a
+<p>Sometimes a project contains short-lived subprojects. I put the project
+folders for these subprojects in the “work” folder of the main project. I
+give the project an appropriate name, for example “presentation on
+YYYY-MM-DD to XXX”. Usually I don’t create input and output folders
+for these subprojects.</p>
+
+<p>The project folder can be shared when you are working with a
 team. Share this note with team members as an aid to getting everyone
 to organize that shared folder consistently. If you are following my
 practices, download a link to this document, name it perhaps,
 “lowrance-2021 folder organization.webloc”, and put it into your
-project’s input folder.&lt;/p&gt;
+project’s input folder.</p>
 
-&lt;p&gt;I’ve written this note up as if all my project files are organized as
+<p>I’ve written this note up as if all my project files are organized as
 I described. But that’s not true, as I have many years of project
 files and this organization occured to me only a few years ago. So
 there a lot of project folders for completed projects that are not
 organized this way. Sometimes I restructure them when I have to refer to
-material in those folders.&lt;/p&gt;
+material in those folders.</p>
 
-&lt;h1 id=&quot;prior-work&quot;&gt;Prior work&lt;/h1&gt;
+<h1 id="prior-work">Prior work</h1>
 
-&lt;p&gt;Many others have written about organizing files for projects. Their
+<p>Many others have written about organizing files for projects. Their
 ideas typically apply to our “work” folder. The approach suggested
 here often is more clearly focused on separating input, output, and
-work.&lt;/p&gt;
+work.</p>
 
-&lt;p&gt;Recent suggestions for organizing project folders are in part driven
+<p>Recent suggestions for organizing project folders are in part driven
 by the need for reproducability. All those ideas apply to our
-suggested “work” folder.&lt;/p&gt;
+suggested “work” folder.</p>
 
-&lt;p&gt;A notable example of organizing for reproducability is from Noble
+<p>A notable example of organizing for reproducability is from Noble
 (2009). He suggests these folders that would be in our work folder:
 doc (containing documents, including papers), data (he segregates the
 raw data from data the project generated), src (the source code), bin
 (executable files go here, including scripts), and results (the
-results of running the programs and a digital project
-notebook). Noble’s system is compatible with our suggestions, with the
-exception that our approach considers who provided the raw data. If it
-came from outside the project, its in our “input” folder in a
-subfolder that identifies the source of the data, not in our
-“work/data” folder.&lt;/p&gt;
+results of running the programs). Noble’s system is compatible with
+our suggestions, with the exception that our approach considers who
+provided the raw data. If it came from outside the project, its in our
+“input” folder in a subfolder that identifies the source of the data,
+not in our “work/data” folder.</p>
 
-&lt;p&gt;In another post, I’ll explain how I organize all the folders on my systems.&lt;/p&gt;
+<p>In another post, I’ll explain how I organize all the folders on my systems.</p>
 
-&lt;h1 id=&quot;works-cited&quot;&gt;Works CIted&lt;/h1&gt;
+<h1 id="works-cited">Works CIted</h1>
 
-&lt;p&gt;William Stafford Noble. “A Quick Guide to Organizing Computational
+<p>William Stafford Noble. “A Quick Guide to Organizing Computational
 Biology Projects.” PLoS Comput Biol 5(7):
-e1000424, 2009. doi.org/10.1371.journal.pcbi.1000424, published 2009-07-31. Accessed 2021-04-15.&lt;/p&gt;</content><author><name></name></author><category term="person_productivity" /><summary type="html">I work on many project concurrently, each collecting files. My projects are of all kinds: some are developing business ideas, some are developing software, some are short-lived and some seem to go on and on. When I switch from one project to another, I need to quickly orient myself to the files in the project. To assist in doing that, I organize project-related folders in a uniform way. This organization structure has served for all kinds of projects. It is simply to setup and use. This note explains the structure.</summary></entry></feed>
+e1000424, 2009. doi.org/10.1371.journal.pcbi.1000424, published 2009-07-31. Accessed 2021-04-15.</p>
+
+:ET

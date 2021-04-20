@@ -1,4 +1,4 @@
-I",<p>I work on many project concurrently, each collecting
+I")<p>I work on many project concurrently, each collecting
 files. My projects are of all kinds: some are developing business
 ideas, some are developing software, some are short-lived and some
 seem to go on and on. When I switch from one project to another, I
@@ -18,7 +18,7 @@ of another post, but for now, you can assume that I have a folder
 called “Projects” that contains all of the project folders.</p>
 
 <p>Each project folder has within it at its top level three subfolders:
-one called “work”, another called “output”, and a third called
+one called “work”, another called “output,” and a third called
 “input.” I usually create these folders when I create then project folder.
 Typically there are no other top-level folders in a project
 folder. Sometimes there are a few files at the top level of the
@@ -43,8 +43,11 @@ finished, and other types of documents.</p>
 <p>Sometimes the work folder contains other folders. These folders might
 be around the phases of a project or some other logical structure such
 as a deliverable. If I’m writing code, there is usually a “src” folder
-containing the source code. The src folder is usually managed by a
+containing the source code. The src folder content is usually managed by a
 version control application.</p>
+
+<p>When the project has grown complicated, I keep a project notebook file
+in the top level of the work folder.</p>
 
 <h1 id="the-output-folder">The output folder</h1>
 
@@ -61,51 +64,41 @@ the folders in “output” sort by date sent.</p>
 the transmital document itself is in the folder. A typical transmital
 document is the email used send the document. If I send to someone
 more than once in a day, I append “a”, “b”, and so forth to the day
-number. The output folder typically gets its first content early in a project’s
-life, because it contains documents describing the project and those
-are most certainly sent to the client.</p>
+number, when I need to distinguish the transmitals. The output folder
+typically gets its first content early in a project’s life, because it
+contains documents describing the project and those are most certainly
+sent to the client.</p>
 
 <h1 id="the-input-folder">The input folder</h1>
 
-<p>Usually there is an “input” folder as well. It contains material for
-which neither I nor my team mates are the authors. Examples would be
-analysis from other parties and data sets from others.</p>
+<p>The input folder contains work that neither I nor my project team
+created. The problem is to organize it so as to be able to find
+material easily. I do that by keeping track of the source of every
+document and the date of the document. The file and directory names in
+the input folder start with “input/SOURCE DATE”.</p>
 
-<p>The structure of this folder reflects the two main sources of input
-documents: someone sends me something and I find something on your
-own.</p>
+<p>When someone sends me files, the source is their name and the date is
+the date the files were sent. All the files go into one folder. I keep
+the file names that the send used. If I get multiple transmission on
+one date from someone, I append “a”, “b”, and so forth to the date.</p>
 
-<p>When someone sends me something, I put the files they sent into a
-folder named “input/LASTNAME, FIRSTNAME”. The document or
-documents are in a subfolder with the date sent. Usually I use
-whatever file names the sender used.</p>
+<p>When I download files from a source, I treat those files just like I
+do when someone sends them to me. Thus, I create a folder and put the
+files in it, using the original file names.</p>
 
-<p>When I find a document myself, perhaps from a literature search, I
-download the document and move it to the input folder. If the document
-has a descriptive name, I preceed that name with the last name of the
-primary author and year of publication. For example, the file name
-might be “chang-2021 how many tyrannosourus rexes ever lived on
-earth.pdf” (which is an article authored by Kenneth Change and
-published in the New York Times sometimes in 2021). (A variant is to
-include the full date when that’s available, so the file name might
-start with “chang-2021-05-15”. Sometimes the downloaded document
-doesn’t have a descriptive name. I then find a few keywords to
-describe it and put those in the file name. For example, the file
-containing the paper by Noble (2009) might have the name “noble-2009
-organizing projects”. I select the keywords hoping that they help me
-find the document.</p>
+<p>The exception is when I find prior literature written by someone
+else. Frequently the literature is a paper or a web page. Usually I
+capture the document as a PDF file. For this type of material, the
+author is more important than the source, so I set SOURCE to the
+lastname of the author and DATE to the publication date. Since there
+is only one document, I prepend the original file name with the SOURCE
+and DATE. Sometimes the original file name is not descriptive. For
+example, the file name may be a DOI identifier. When that happens, I
+use the title of the work.</p>
 
-<p>When a literature search leads to a collection of documents. I create
-a folder from them. For example, I consulted the O*NET database and
-decided to down load several spreadsheet files. I create a folder
-“input/ONET” with subfolder named YYYY-MM-DD and put all the files in that
-folder. That way I know the source and date downloaded.</p>
-
-<p>When I’m working on a team, often team mates will send documents that
-they have written. These documents usually go into the input
-folder. An exception is when they are drafts intended for me to work
-on. In that case, they go into a subfolder in the work folder and my
-edited version is in the same subfolder.</p>
+<p>With this scheme, the input folder has both subfolders and files. The
+is a folder for each source and date the material was received. There
+is a file for each paper or similar document.</p>
 
 <p>A good practice is to never edit or otherwise change the documents in
 the input folder. Doing so would make your process hard to
@@ -139,32 +132,20 @@ I place alias files for related projects.</p>
 
 <p>The structure of a project folder looks like this:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project
-alias of related project1
-alias of related project2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># alias for related projects
+project name/alias of folder for related project
 ...
-project/input
-project/input/source1/document 1
-project/input/source1/document 2
+# input documents organized into sources or names of authors
+project name/input/SOURCE DATE/ORIGINAL-FILENAME
+project name/input/SOURCE DATE [ORIGINAL FILENAME | WORK TITLE]
 ...
-project/input/AUTHOR-YEAR sender's name
+# output document organized by date-party sent to
+project name/output/YYYY-MM-DD NAME1/document 1
 ...
-project/input/AUTHOR-YEAR my keywords
+# work documents organized by deliverable or phase
+project name/work/notebook.txt
+project name/work/[DELIVERABLE | PHASE]/document 1
 ...
-project/output
-project/output/YYYY-MM-DD name sent to 1
-project/output/YYYY-MM-DD name sent to 2
-...
-project/work
-project/work/deliverable1
-project/work/deliverable2
-...
-project/input
-project/input/source1/document1
-project/input/source1/document2
-...
-project/input/AUTHOR-YEAR sender's name
-project/input/AUTHOR-YEAR my keywords
 </code></pre></div></div>
 
 <h1 id="using-the-project-folders">Using the project folders</h1>
@@ -177,12 +158,6 @@ financial statements and bills and so forth, a work folder containing
 the files my accounting system uses as well as various spreadsheets I
 use to keep track of things, and an output folder for material I’ve
 sent to others.</p>
-
-<p>Sometimes a project contains short-lived subprojects. I put the project
-folders for these subprojects in the “work” folder of the main project. I
-give the project an appropriate name, for example “presentation on
-YYYY-MM-DD to XXX”. Usually I don’t create input and output folders
-for these subprojects.</p>
 
 <p>The project folder can be shared when you are working with a
 team. Share this note with team members as an aid to getting everyone
@@ -214,11 +189,12 @@ suggested “work” folder.</p>
 doc (containing documents, including papers), data (he segregates the
 raw data from data the project generated), src (the source code), bin
 (executable files go here, including scripts), and results (the
-results of running the programs). Noble’s system is compatible with
-our suggestions, with the exception that our approach considers who
-provided the raw data. If it came from outside the project, its in our
-“input” folder in a subfolder that identifies the source of the data,
-not in our “work/data” folder.</p>
+results of running the programs and a digital project
+notebook). Noble’s system is compatible with our suggestions, with the
+exception that our approach considers who provided the raw data. If it
+came from outside the project, its in our “input” folder in a
+subfolder that identifies the source of the data, not in our
+“work/data” folder.</p>
 
 <p>In another post, I’ll explain how I organize all the folders on my systems.</p>
 

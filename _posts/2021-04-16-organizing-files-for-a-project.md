@@ -53,6 +53,9 @@ as a deliverable. If I'm writing code, there is usually a "src" folder
 containing the source code. The src folder content is usually managed by a
 version control application.
 
+When the project has grown complicated, I keep a project notebook file
+in the top level of the work folder.
+
 # The output folder
 
 I want to keep track of everything I've shown external parties so that
@@ -75,51 +78,34 @@ sent to the client.
 
 # The input folder
 
-Usually there is an "input" folder as well. It contains material for
-which neither I nor my teammates are the authors. Examples would be
-analysis from other parties and data sets from others. 
+The input folder contains work that neither I nor my project team
+created. The problem is to organize it so as to be able to find
+material easily. I do that by keeping track of the source of every
+document and the date of the document. The file and directory names in
+the input folder start with "input/SOURCE DATE".
 
-The structure of this folder reflects the two main sources of input
-documents: someone sends me something and I find something on your
-own.
+When someone sends me files, the source is their name and the date is
+the date the files were sent. All the files go into one folder. I keep
+the file names that the sender used. If I get multiple transmission on
+one date from someone, I append "a", "b", and so forth to the date.
 
-When someone sends me something, I put the files they sent into a
-folder named "input/LASTNAME, FIRSTNAME/YYYY-MM-DD". The date
-is usually the date the documents were sent. Usually I use whatever
-file names the sender used, as these tend to be unique within a
-transmital and useful to know when trying to find a document: "Do you
-have the XYZ document I sent you last week?"
+When I download files from a source, I treat those files just like I
+do when someone sends them to me. Thus, I create a folder and put the
+files in it, using the original file names.
 
-I use the same structure for data sets I download from other
-sources. The folder name is "input/SOURCE/YYYY-MM-DD/" and the file
-names are whatever was used by the source.
+The exception is when I find prior literature written by someone
+else. Frequently the literature is a paper or a web page. Usually I
+capture the document as a PDF file. For this type of material, the
+author is more important than the source, so I set SOURCE to the
+lastname of the author and DATE to the publication date. Since there
+is only one document, I prepend the original file name with the SOURCE
+and DATE. Sometimes the original file name is not descriptive. For
+example, the file name may be a DOI identifier. When that happens, I
+use the title of the work.
 
-When I find a document myself, perhaps from a literature search, I
-download the document and move it to the input folder. If the document
-has a descriptive name, I preceed that name with the last name of the
-primary author and year of publication. For example, the file name
-might be "chang-2021 how many tyrannosourus rexes ever lived on
-earth.pdf" (which is an article authored by Kenneth Change and
-published in the New York Times sometimes in 2021). (A variant is to
-include the full date when that's available, so the file name might
-start with "chang-2021-05-15." Sometimes the downloaded document
-doesn't have a descriptive name. I then find a few keywords to
-describe it and put those in the file name. For example, the file
-containing the paper by Noble (2009) might have the name "noble-2009
-organizing projects". I select the keywords hoping that they help me
-find the document.
-
-Many times the literature I consult is online. It might change at any
-time, so I keep track of both the date the document was published and
-the date I accessed the document. The date is was published is in the
-file name or folder name. The date I access it is in the notes I take
-and those notes are in the work folder.
-
-When I'm working on a team, often team mates will send documents that
-they have written. If these provide background information for the
-project, they go into the input folder. If they are drafts of
-deliverables we are working on, they go into an appropropriate subfolder
-in the work folder.
+With this scheme, the input folder has both subfolders and files. The
+is a folder for each source and date the material was received. There
+is a file for each paper or similar document.
 
 A good practice is to never edit or otherwise change the documents in
 the input folder. Doing so would make your process hard to
@@ -154,23 +140,18 @@ I place alias files for related projects.
 The structure of a project folder looks like this:
 
     # alias for related projects
-    project name/alias of folder for related project 1
-    project name/alias of folder for related project 2
+    project name/alias of folder for related project
     ...
 	# input documents organized into sources or names of authors
-    project name/input/source 1/YYYY-MM-DD/document 1
-    project name/input/source 1/YYYY-MM-DD/document 2
-    ...
-    project name/input/LASTNAME-YEAR document-name-from-source
-    project name/input/LASTNAME-YEAR my keywords
+	project name/input/SOURCE DATE/ORIGINAL-FILENAME
+	project name/input/SOURCE DATE [ORIGINAL FILENAME | WORK TITLE]
     ...
 	# output document organized by date-party sent to
     project name/output/YYYY-MM-DD NAME1/document 1
-	project name/output/YYYY-MM-DD NAME1/document 2
 	...
-	# work documents organized by deliverable (and some deliverable within phase)
-    project name/work/deliverable 1/document 1
-    project name/work/deliverable 1/document 2
+	# work documents organized by deliverable or phase
+	project name/work/notebook.txt
+    project name/work/[DELIVERABLE | PHASE]/document 1
     ...
 
 
